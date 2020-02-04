@@ -1,2 +1,2 @@
-# event-bot
-Для статьи на Habr
+Исходный код для статьи https://habrahabr.ru/post/342560/
+

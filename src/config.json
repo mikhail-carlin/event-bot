@@ -1,0 +1,24 @@
+{
+	"production": {
+		"telegramToken": "",
+		"connectionString": "",
+		"buttonNames": {
+			"shareText": "Поделиться ботом",
+			"shareUrl": "https%3A//t.me/event_habr_bot",
+			"linkText": "Ссылка на Habrahabr",
+			"linkUrl": "https://habrahabr.ru",
+			"calendar": "Расписание занятий"
+		}
+	},
+	"development": {
+		"telegramToken": "",
+		"connectionString": "",
+		"buttonNames": {
+			"shareText": "Поделиться ботом",
+			"shareUrl": "https%3A//t.me/event_habr_bot",
+			"linkText": "Ссылка на Habrahabr",
+			"linkUrl": "https://habrahabr.ru",
+			"calendar": "Расписание занятий"
+		}
+	}
+}

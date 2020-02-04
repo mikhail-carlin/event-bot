@@ -1,0 +1,50 @@
+<h2>Массовая рассылка</h2>
+<form method="POST" action="/globalmessage">
+    <h3>Сообщение:</h3>
+    <textarea class="form-control" rows="3" type="text" name="message">"Напишите что-нибудь..."</textarea>
+    <br/><br/>
+    <input align="right" class="btn btn-success" type="submit" value="Отправить">
+</form>
+
+<h2>Запустить голосование</h2>
+<form method="POST" action="/voting">
+    <h3>Сообщение:</h3>
+    <textarea class="form-control" rows="3" type="text" name="message">"Напишите что-нибудь..."</textarea>
+    <br/><br/>
+    <input align="right" class="btn btn-success" type="submit" value="Отправить">
+</form>
+
+<h2>Все кто взаимодейсвтовал с ботом:</h2>
+<ul>
+    <% for(var i=0; i<users.length; i++) {%>
+    <li class="list-group-item list-group-item-info">
+        <%= users[i].telegramId %>
+        <%= users[i].fistName %>
+        <%= users[i].lastName %>
+    </li>
+    <% } %>
+</ul>
+
+<h2>Написать личное сообщение</h2>
+<form method="POST" action="/privatemessage">
+    <h3>Telegram ид пользователя:</h3>
+    <textarea class="form-control" rows="1" type="text" name="user">"Напишите ид пользователя..."</textarea>
+    <h3>Сообщение:</h3>
+    <textarea class="form-control" rows="3" type="text" name="message">"Напишите что-нибудь..."</textarea>
+    <br/><br/>
+    <input align="right" class="btn btn-success" type="submit" value="Отправить">
+</form>
+
+
+<h2>Результаты голосования:</h2>
+<ul>
+    <% for(var i=0; i<votes.length; i++) {%>
+    <li class="list-group-item list-group-item-info">
+        <%= votes[i].telegramId %>
+        <%= votes[i].question %>
+        <%= votes[i].answer %>
+    </li>
+    <% } %>
+</ul>
+<br/>
+<a href="/" class="btn btn-success">Обновить</a>
